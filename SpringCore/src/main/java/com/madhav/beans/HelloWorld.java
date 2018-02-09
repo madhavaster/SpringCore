@@ -1,4 +1,4 @@
-package com.mkyong.common;
+package com.madhav.beans;
 
 public class HelloWorld {
 	private String name;
