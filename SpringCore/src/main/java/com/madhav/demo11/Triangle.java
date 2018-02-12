@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
-public class Triangle{
+public class Triangle implements InitializingBean,DisposableBean{
 	
 	private String type;
 	
@@ -28,5 +28,15 @@ public class Triangle{
 	}
 	public void myDestroy() {
 		System.out.println("myDestroy is called");
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("destroy is called");
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("afterPropertiesSet is called");
 	}
 }
