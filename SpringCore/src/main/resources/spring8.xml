@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="triangle" class="com.madhav.demo8.Triangle" autowire="byType">
+	<bean id="triangle" class="com.madhav.demo8.Triangle" autowire="byType" scope="prototype">
 	</bean>
 	
 	<bean id="pointA" class="com.madhav.demo8.Point">
