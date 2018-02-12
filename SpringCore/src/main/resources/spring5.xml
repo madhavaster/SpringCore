@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="triangle" class="com.madhav.demo5.Triangle">
+		<property name="pointA" ref="pointA"/>
+		<property name="pointB" ref="pointB"/>
+		<property name="pointC" ref="pointC"/>
+	</bean>
+	<bean id="pointA" class="com.madhav.demo5.Point">
+		<property name="x" value="0"/>
+		<property name="y" value="0"/>
+	</bean>
+	<bean id="pointB" class="com.madhav.demo5.Point">
+		<property name="x" value="10"/>
+		<property name="y" value="0"/>
+	</bean>
+	<bean id="pointC" class="com.madhav.demo5.Point">
+		<property name="x" value="0"/>
+		<property name="y" value="-10"/>
+	</bean>
+</beans>
