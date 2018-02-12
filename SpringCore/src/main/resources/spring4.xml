@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" default-init-method="init">
+
+	<bean id="triangle" class="com.madhav.demo4.Triangle">
+		<!-- <property name="type" value="equilateral" /> -->
+		<constructor-arg>
+			<value>type1</value>
+		</constructor-arg>
+	</bean>
+	
+</beans>
