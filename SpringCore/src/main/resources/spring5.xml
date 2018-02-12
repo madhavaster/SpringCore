@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="triangle" class="com.madhav.demo5.Triangle">
+	<bean id="triangle" class="com.madhav.demo5.Triangle" name="t2">
 		<property name="pointA" ref="zeroPoint"/>
 		<property name="pointB">
 			<bean class="com.madhav.demo5.Point">
@@ -22,4 +22,6 @@
 		<property name="x" value="0"/>
 		<property name="y" value="0"/>
 	</bean>
+	
+	<alias name="triangle" alias="t1"/>
 </beans>
