@@ -10,6 +10,7 @@ public class DrawingApp {
 		//BeanFactory factory= new XmlBeanFactory(resource);
 		ApplicationContext context= new ClassPathXmlApplicationContext("spring3.xml");
 		Triangle bean = context.getBean("triangle", Triangle.class);
+		//bean.setType("equilateral");
 		bean.draw();
 	}
 }

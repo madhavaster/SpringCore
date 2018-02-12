@@ -3,5 +3,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" default-init-method="init">
 
-	<bean id="triangle" class="com.madhav.demo3.Triangle"/>
+	<bean id="triangle" class="com.madhav.demo3.Triangle">
+		<property name="type" value="equilateral" />
+	</bean>
+	
 </beans>
