@@ -7,4 +7,9 @@
 		<property name="type" value="equilateral"/>
 	</bean>
 	
+	<bean id="p1" class="com.madhav.demo11.Point">
+		<property name="x" value="20"/>
+		<property name="y" value="20"/>
+	</bean>
+	<bean class="com.madhav.demo11.DisplayNameBeanPostProcessor"/>
 </beans>

@@ -12,18 +12,20 @@ public class DrawingApp {
 		bean.draw();
 	}
 }
-/*
-Feb 13, 2018 12:28:23 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:28:23 IST 2018]; root of context hierarchy
-Feb 13, 2018 12:28:23 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+
+/*Feb 13, 2018 12:40:22 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:40:22 IST 2018]; root of context hierarchy
+Feb 13, 2018 12:40:22 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring11.xml]
 setType is called
+postProcessorBeforeInitialization is called
 afterPropertiesSet is called
 myInit is called
+postProcessAfterInitialization is called
+postProcessorBeforeInitialization is called
+postProcessAfterInitialization is called
 draw is called
-Feb 13, 2018 12:28:23 AM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:28:23 IST 2018]; root of context hierarchy
+Feb 13, 2018 12:40:23 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:40:22 IST 2018]; root of context hierarchy
 destroy is called
-myDestroy is called
-
- */
+myDestroy is called*/
