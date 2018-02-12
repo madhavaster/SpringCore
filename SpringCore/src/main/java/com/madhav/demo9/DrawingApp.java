@@ -11,3 +11,10 @@ public class DrawingApp {
 		bean.draw();
 	}
 }
+
+/*
+ * triangle
+ * inside setApplicatinoContext method
+ * 0...0
+ * 0....0
+ */

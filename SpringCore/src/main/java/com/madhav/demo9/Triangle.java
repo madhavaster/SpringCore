@@ -1,10 +1,11 @@
 package com.madhav.demo9;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
-public class Triangle implements ApplicationContextAware{
+public class Triangle implements ApplicationContextAware,BeanNameAware{
 	
 	private Point pointA;
 	private ApplicationContext context = null;
@@ -27,5 +28,10 @@ public class Triangle implements ApplicationContextAware{
 		this.context = context;
 		Point bean = context.getBean("pointA",Point.class);
 		System.out.println(bean.getX()+"..."+bean.getY());
+	}
+
+	@Override
+	public void setBeanName(String name) {
+		System.out.println(name);
 	}
 }
