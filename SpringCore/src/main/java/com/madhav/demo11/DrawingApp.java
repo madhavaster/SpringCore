@@ -12,15 +12,14 @@ public class DrawingApp {
 		bean.draw();
 	}
 }
-
-/*Feb 13, 2018 12:12:32 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:12:32 IST 2018]; root of context hierarchy
-Feb 13, 2018 12:12:32 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+/*
+ * Feb 13, 2018 12:19:01 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:19:01 IST 2018]; root of context hierarchy
+Feb 13, 2018 12:19:01 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring11.xml]
 setType is called
-afterPropertiesSet is called
+myInit is called
 draw is called
-destroy is called
-Feb 13, 2018 12:12:32 AM org.springframework.context.support.AbstractApplicationContext doClose
-INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:12:32 IST 2018]; root of context hierarchy
-*/
+Feb 13, 2018 12:19:01 AM org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing org.springframework.context.support.ClassPathXmlApplicationContext@45ff54e6: startup date [Tue Feb 13 00:19:01 IST 2018]; root of context hierarchy
+ */
