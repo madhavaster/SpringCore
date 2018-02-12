@@ -4,8 +4,8 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" default-init-method="init">
 
 	<bean id="triangle" class="com.madhav.demo4.Triangle">
-		<constructor-arg value="equilateral"/>
-		<constructor-arg value="20"/>
+		<constructor-arg type="int" value="30"/>
+		<constructor-arg type="java.lang.String" value="equilateral"/>
 	</bean>
 	
 </beans>
