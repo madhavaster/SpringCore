@@ -3,7 +3,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="helloBean" class="com.madhav.beans.HelloWorld">
+	<bean id="helloBean2" class="com.madhav.beans.HelloWorld">
+		<property name="name" value="Swapna" />
+	</bean>
+	<bean id="helloBean1" class="com.madhav.beans.HelloWorld">
 		<property name="name" value="Madhava" />
 	</bean>
 
