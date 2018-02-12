@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="triangle" class="com.madhav.demo11.Triangle" init-method="myInit">
+	<bean id="triangle" class="com.madhav.demo11.Triangle" init-method="myInit" destroy-method="myDestroy">
 		<property name="type" value="equilateral"/>
 	</bean>
 	

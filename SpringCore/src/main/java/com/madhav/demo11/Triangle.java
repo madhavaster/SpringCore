@@ -26,4 +26,7 @@ public class Triangle{
 	public void myInit() {
 		System.out.println("myInit is called");
 	}
+	public void myDestroy() {
+		System.out.println("myDestroy is called");
+	}
 }
