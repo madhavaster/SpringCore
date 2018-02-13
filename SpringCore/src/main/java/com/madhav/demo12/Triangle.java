@@ -1,14 +1,13 @@
 package com.madhav.demo12;
 
-import org.springframework.beans.factory.annotation.Required;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Triangle{
-
+	@Autowired
 	private Point p;
 	public Point getP() {
 		return p;
 	}
-	@Required
 	public void setP(Point p) {
 		this.p = p;
 	}
