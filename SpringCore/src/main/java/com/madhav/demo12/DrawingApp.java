@@ -7,7 +7,7 @@ public class DrawingApp {
 	
 	public static void main(String[] args) {
 		ApplicationContext context= new ClassPathXmlApplicationContext("spring12.xml");
-		Triangle t=context.getBean("triangle",Triangle.class);
+		Shape t=context.getBean("shape",Triangle.class);
 		t.draw();
 	}
 }
