@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" default-init-method="myInit" default-destroy-method="myDestroy">
+
+	<bean id="triangle" class="com.madhav.demo12.Triangle">
+	</bean>
+	<bean id="p" class="com.madhav.demo12.Point">
+		<property name="x" value="30"/>
+		<property name="y" value="50"/>
+	</bean>
+	<bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+</beans>
