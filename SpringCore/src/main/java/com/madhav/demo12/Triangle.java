@@ -9,7 +9,7 @@ public class Triangle implements Shape{
 		return p;
 	}
 	@Autowired
-	@Qualifier("p12")
+	@Qualifier("p14")
 	public void setP(Point p) {
 		this.p = p;
 	}

@@ -1,14 +1,20 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" default-init-method="myInit" default-destroy-method="myDestroy">
-
-	<bean id="shape" class="com.madhav.demo12.Triangle">
-	</bean>
-	<bean id="p2" class="com.madhav.demo12.Point">
-		<qualifier value="p12"/>
-		<property name="x" value="30"/>
-		<property name="y" value="50"/>
-	</bean>
-	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+   <context:annotation-config/>
+   <bean id="shape" class="com.madhav.demo12.Triangle"/>
+   <bean id="p12" class="com.madhav.demo12.Point">
+   		<qualifier value="p14"/>
+   		<property name="x" value="10"/>
+   		<property name="y" value="10"/>
+   </bean>
+   <bean id="p11" class="com.madhav.demo12.Point">
+   		<property name="x" value="11"/>
+   		<property name="y" value="11"/>
+   </bean>
 </beans>
